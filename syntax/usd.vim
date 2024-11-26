@@ -44,8 +44,8 @@ highlight link usdAttrVariability Include
 syntax keyword usdListOperator append delete prepend
 highlight link usdListOperator Include
 
-syntax match usdVersion "\v^#usda.*"
-highlight link usdVersion CursorLine
+syntax match usdComment "\v^#.*$"
+highlight link usdComment Comment
 
 syntax match usdString "\v\".*\""
 highlight link usdString Identifier
@@ -67,6 +67,9 @@ highlight link usdPrimType Type
 
 syntax match usdAttrName "\v[^ ]+( \=)@="
 highlight link usdAttrName String
+
+syntax match usdVersion "\v^#usda.*"
+highlight link usdVersion CursorLineNr
 
 let b:current_syntax = 'usd'
 
