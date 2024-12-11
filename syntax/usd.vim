@@ -44,7 +44,7 @@ highlight link usdAttrVariability Include
 syntax keyword usdListOperator append delete prepend
 highlight link usdListOperator Include
 
-syntax match usdComment "\v^#.*$"
+syntax match usdComment "\v#.*$"
 highlight link usdComment Comment
 
 syntax match usdString "\v\".*\""
