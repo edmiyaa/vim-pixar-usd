@@ -13,7 +13,7 @@ func! UsdSearchAssetPaths()
     execute "normal /\<CR>"
 endf
 
-if expand('%:e') == 'usdc'
+if getline(1) =~ '\v^PXR-USDC'
     call Usdc2Usda()
     cabbrev <buffer> w call Usda2Usdc()
 endif
